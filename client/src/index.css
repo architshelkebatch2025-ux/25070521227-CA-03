@@ -1,0 +1,72 @@
+/* Global Design Variables - Navy Blue, White, & Light Blue Theme */
+:root {
+  --primary-navy: #0f2b5c;
+  --primary-dark: #091a38;
+  --navy-hover: #163e83;
+  --accent-blue: #2563eb;
+  --accent-light: #3b82f6;
+  --light-blue-bg: #f0f6fc;
+  --card-blue-bg: #e2eeff;
+  --border-light: #cbd5e1;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --bg-white: #ffffff;
+  --success-green: #10b981;
+  --success-bg: #ecfdf5;
+  --danger-red: #ef4444;
+  --danger-bg: #fef2f2;
+  --warning-amber: #f59e0b;
+  --warning-bg: #fffbeb;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 3px rgba(15, 43, 92, 0.08);
+  --shadow-md: 0 4px 12px rgba(15, 43, 92, 0.1);
+  --shadow-lg: 0 8px 24px rgba(15, 43, 92, 0.14);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--light-blue-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input, select {
+  font-family: inherit;
+  outline: none;
+}
